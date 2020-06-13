@@ -4,6 +4,7 @@ tags:
   - ansible
   - playbook
   - bootstrapper
+emoji: 📓
 ---
 
 To run the bootstrapper playbook you can use `ansible-playbook` in the following way:
