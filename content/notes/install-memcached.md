@@ -16,7 +16,7 @@ git clone https://github.com/thundersquared/apiscp-memcached.git addins/apiscp-m
 ansible-playbook addin.yml --extra-vars=addin=apiscp-memcached
 ```
 
-You should then (re)build your PECL packages. [Learn how here ↗](./install-php-pecl-modules).
+You should then (re)build your PECL packages. [Learn how here ↗](./install-php-pecl-modules)
 
 To start using your freshly installed `memcached`:
 

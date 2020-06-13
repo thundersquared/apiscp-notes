@@ -48,3 +48,5 @@ wp-cli config set WP_REDIS_IGBINARY true --raw
 # Disable plugin banners
 wp-cli config set WP_REDIS_DISABLE_BANNERS true --raw
 ```
+
+Looking for installing `igbinary` PECL module? [Learn how here ↗](./install-php-pecl-modules)
