@@ -2,7 +2,6 @@
 title: Install Yarn
 tags:
   - yarn
-  - node
   - nodejs
 emoji: 🐱
 link: https://github.com/thundersquared/apiscp-yarn

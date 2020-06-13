@@ -29,3 +29,7 @@ yarn develop
 ## Contributing
 
 Submit a PR and have fun!
+
+## Credits
+
+This project is based on Zander Martineau's [Code Notes](https://github.com/MrMartineau/gatsby-starter-code-notes) gimmick—show him some love! :kissing_heart:️

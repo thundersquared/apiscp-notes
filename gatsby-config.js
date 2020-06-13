@@ -1,7 +1,7 @@
 // Gatsby config
 let config = {
     siteMetadata: {
-        title: 'apiscp-notes',
+        title: 'ApisCP Notes',
         description: `Notes and cheats for a better ApisCP administration experience.`,
         author: 'thundersquared',
     },
