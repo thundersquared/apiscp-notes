@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="static/images/apiscp-icon.png" width="128" />ù
+  <img src="static/images/apiscp-icon.png" width="128" />
   
   <h2>Notes and cheats for a better ApisCP administration experience.</h2>
   
