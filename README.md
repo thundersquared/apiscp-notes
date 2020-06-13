@@ -1,9 +1,13 @@
 <div align="center">
-  <img src="static/images/apiscp-icon.png" width="128" />
-  <div>
-    [![Build Status](https://travis-ci.com/thundersquared/apiscp-notes.svg?branch=master)](https://travis-ci.com/thundersquared/apiscp-notes)
-  </div>
-  <p>Notes and cheats for a better ApisCP administration experience.</p>
+  <img src="static/images/apiscp-icon.png" width="128" />ù
+  
+  <h2>Notes and cheats for a better ApisCP administration experience.</h2>
+  
+  <p>
+    <a href="https://travis-ci.com/thundersquared/apiscp-notes">
+      <img src="https://travis-ci.com/thundersquared/apiscp-notes.svg?branch=master" alt="This repo's build status." />
+    </a>
+  </p>
 </div>
 
 ## Install
