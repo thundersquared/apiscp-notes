@@ -9,9 +9,4 @@ install:
   - yarn install
 script:
   - yarn build
-deploy:
-  provider: script
-  script: yarn deploy
-  cleanup: false
-  on:
-    branch: master
+  - yarn deploy
