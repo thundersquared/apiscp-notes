@@ -4,11 +4,14 @@ language: node_js
 node_js:
   - "12"
 cache: yarn
-before_script:
-  - npm install -g gatsby-cli
+install:
+  - yarn global add gatsby-cli
+  - yarn install
+script:
+  - yarn build
 deploy:
   provider: script
-  script: yarn run deploy
+  script: yarn deploy
   cleanup: true
   on:
     branch: master
