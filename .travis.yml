@@ -12,6 +12,6 @@ script:
 deploy:
   provider: script
   script: yarn deploy
-  cleanup: true
+  cleanup: false
   on:
     branch: master
