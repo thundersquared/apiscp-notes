@@ -6,6 +6,7 @@ tags:
   - redis
   - cache
   - wordpress
+emoji: 📰
 ---
 
 Here's a step-by-step copy-paste tutorial:
