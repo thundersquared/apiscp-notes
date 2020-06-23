@@ -6,11 +6,16 @@ import {merge} from 'lodash'
 
 let Components = merge({}, CoreComponents, {
     AlertBox: (props) => {
+        let level = 'warning';
+
+        if (props.level) {
+            level = props.level
+        }
+
         return (
             <Message sx={{
-                border: 'none',
-                bg: "Messages.Alert.background",
-                color: 'Messages.Alert.color'
+                border: '4px solid',
+                bg: level,
             }}>
                 <MDX components={CoreComponents}>
                     {props.children}
