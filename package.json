@@ -12,7 +12,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean && gh-pages-clean",
-    "dev": "gatsby develop -p 8080",
+    "dev": "gatsby develop -p ${PORT:-8080}",
     "start": "gatsby serve",
     "test": "echo 'to do xD'",
     "prod": "env NODE_ENV=production gatsby build --prefix-paths",

@@ -1,4 +1,5 @@
 .cache
 public
 node_modules
+*.swp
 /yarn-error.log
