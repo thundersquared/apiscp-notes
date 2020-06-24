@@ -3,7 +3,9 @@ dist: bionic
 language: node_js
 node_js:
   - "12"
-cache: yarn
+cache:
+  - npm
+  - yarn
 install:
   - yarn global add gatsby-cli
   - yarn install
