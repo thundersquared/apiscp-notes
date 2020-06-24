@@ -16,7 +16,7 @@
     "start": "gatsby serve",
     "test": "echo 'to do xD'",
     "prod": "env NODE_ENV=production gatsby build --prefix-paths",
-    "deploy": "yarn clean && yarn prod && gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/thundersquared/apiscp-notes.git"
+    "deploy": "gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/thundersquared/apiscp-notes.git"
   },
   "dependencies": {
     "@theme-ui/color": "^0.3.1",

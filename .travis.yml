@@ -8,5 +8,6 @@ install:
   - yarn global add gatsby-cli
   - yarn install
 script:
-  - yarn build
+  - yarn clean
+  - yarn prod
   - yarn deploy
