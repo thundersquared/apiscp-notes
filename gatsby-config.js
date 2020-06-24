@@ -3,14 +3,9 @@ let config = {
     siteMetadata: {
         title: 'ApisCP Notes',
         description: `Notes and cheats for a better ApisCP administration experience.`,
-        author: 'thundersquared',
+        author: 'ApisCP Community',
     },
     pathPrefix: '/',
-}
-
-// Add prefix on deploy
-if (process.env.NODE_ENV === 'production') {
-    config.pathPrefix = '/apiscp-notes/';
 }
 
 // Plugins config
