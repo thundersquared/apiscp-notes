@@ -19,6 +19,9 @@
     "deploy": "yarn clean && yarn prod && gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/thundersquared/apiscp-notes.git"
   },
   "dependencies": {
+    "@theme-ui/color": "^0.3.1",
+    "@theme-ui/color-modes": "^0.3.1",
+    "@theme-ui/core": "^0.3.1",
     "gatsby": "^2.23.1",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-offline": "^3.2.9",

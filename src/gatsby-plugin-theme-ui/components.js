@@ -1,26 +1,28 @@
 /** @jsx jsx */
 import MDX from '@mdx-js/runtime'
-import {jsx, Message} from 'theme-ui'
+import {jsx, Box} from 'theme-ui'
+import {darken} from '@theme-ui/color'
+import {useColorMode} from '@theme-ui/color-modes'
 import CoreComponents from 'gatsby-theme-code-notes/src/gatsby-plugin-theme-ui/components'
 import {merge} from 'lodash'
 
 let Components = merge({}, CoreComponents, {
     AlertBox: (props) => {
-        let level = 'warning';
-
-        if (props.level) {
-            level = props.level
-        }
+        const [colorMode] = useColorMode()
+        const level = props.level ? props.level : 'warning';
 
         return (
-            <Message sx={{
-                border: '4px solid',
-                bg: level,
+            <Box sx={{
+                bg: colorMode === 'default' ? level : darken(level, 0.5),
+                border: '2px solid',
+                borderColor: darken(level, 0.125),
+                borderRadius: 4,
+                px: '1rem',
             }}>
                 <MDX components={CoreComponents}>
                     {props.children}
                 </MDX>
-            </Message>
+            </Box>
         )
     }
 });
