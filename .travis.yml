@@ -12,6 +12,7 @@ install:
 script:
   - yarn clean
   - yarn prod
+before_deploy: yarn add-cname
 deploy:
   provider: script
   script: yarn deploy
