@@ -10,4 +10,9 @@ install:
 script:
   - yarn clean
   - yarn prod
-  - yarn deploy
+deploy:
+  provider: script
+  script: yarn deploy
+  cleanup: false
+  on:
+    branch: master
