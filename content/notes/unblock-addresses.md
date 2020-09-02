@@ -2,6 +2,7 @@
 title: Unblocking addresses
 tags:
   - firewall
+  - network
 emoji: 🔥
 link: https://github.com/thundersquared/unblocking-addresses
 ---
