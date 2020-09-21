@@ -2975,12 +2975,12 @@
     "@theme-ui/css" "^0.4.0-rc.1"
     deepmerge "^4.2.2"
 
-"@theme-ui/color@^0.4.0-highlight.0":
-  version "0.4.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@theme-ui/color/-/color-0.4.0-rc.1.tgz#4ca5701d3d998516573b70fba8195e80395d7e61"
-  integrity sha512-k7TcnzyUxYeaHU3X8qceTP8CeBTf7xBRti8WeXm9PY9W8Viao+zqbpX1nNyvWyNSP76fTAaXj0t//zVgioQAIA==
+"@theme-ui/color@^0.4.0-rc.5":
+  version "0.4.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@theme-ui/color/-/color-0.4.0-rc.5.tgz#d638f089d2030e17438810b2b760fc9704850cc4"
+  integrity sha512-cmKnIXKC/br+qDbzmjaHg0YDgDuGdN7slKwUc2j3aSLmvx7aKdiSFBkVUMGeFhgBy32y9SIH6jmT6g3UqhogmQ==
   dependencies:
-    "@theme-ui/css" "^0.4.0-rc.1"
+    "@theme-ui/css" "^0.4.0-rc.5"
     polished "^3.4.1"
 
 "@theme-ui/components@^0.4.0-rc.1":
