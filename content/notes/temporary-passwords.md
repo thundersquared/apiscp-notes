@@ -3,6 +3,7 @@ title: Temporary passwords
 tags:
   - auth
   - api
+  - cpcmd
 emoji: 🔑
 
 ---
