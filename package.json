@@ -23,7 +23,7 @@
     "@theme-ui/color": "^0.4.0-highlight.0",
     "@theme-ui/color-modes": "^0.4.0-highlight.0",
     "@theme-ui/core": "^0.4.0-rc.5",
-    "gatsby": "^2.24.63",
+    "gatsby": "^2.24.91",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-offline": "^3.2.28",
     "gatsby-theme-code-notes": "1.10.1",
