@@ -1,7 +1,8 @@
 ---
-title: Apache2 tips and tricks
+title: Apache tips and tricks
 tags:
-  - apache2
+  - apache
+  - rewriterules
   - websockets
 emoji: 🦅
 ---
@@ -9,6 +10,13 @@ emoji: 🦅
 These are some of the most useful .htaccess rules you'd need.
 
 ## Rules
+
+Enabling RewriteEngine and setting RewriteBase
+```
+RewriteEngine On
+RewriteBase /
+```
+> Setting the RewriteBase **is required** due to rule inheritance with synthetic addon domains and subdomains.  [Learn more here ↗](https://github.com/apisnetworks/httpd-apache/blob/master/SOURCES/httpd-apnscp-rewrite-map.conf)
 
 Enable caching
 ```
@@ -29,8 +37,8 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 Proxy websocket requests
 ```
-RewriteCond %{HTTP:Connection} upgrade [NC]
-RewriteCond %{HTTP:Upgrade} websocket [NC]
+RewriteCond %{HTTP:Upgrade} =websocket [NC]
+RewriteCond %{HTTP:Connection} =upgrade [NC]
 RewriteRule ^ ws://127.0.0.1:40001%{REQUEST_URI} [P,L]
 ```
 > Note that 40001 is the port your app is listening to locally.
@@ -41,7 +49,7 @@ RewriteRule ^ http://127.0.0.1:40001%{REQUEST_URI} [P,L,QSA]
 ```
 > Note that 40001 is the port your app is listening to locally.
 
-Using results in RewriteRules
+Using a match result in a RewriteRule
 ```
 RewriteRule ^(.*)$ http://127.0.0.1:40001/api/$1 [P,L,QSA]
 ```
@@ -54,7 +62,9 @@ Here's an example of a fully fledged .htaccess proxying HTTP and WebSocket reque
 ```
 DirectoryIndex disabled
 UnsetEnv no-cache
+
 RewriteEngine On
+RewriteBase /
 
 # Redirect HTTP to HTTPS
 RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
@@ -62,8 +72,8 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 # Proxy websocket requests
-RewriteCond %{HTTP:Connection} upgrade [NC]
-RewriteCond %{HTTP:Upgrade} websocket [NC]
+RewriteCond %{HTTP:Upgrade} =websocket [NC]
+RewriteCond %{HTTP:Connection} =upgrade [NC]
 RewriteRule ^ ws://127.0.0.1:40001%{REQUEST_URI} [P,L]
 
 # Proxy generic HTTP requests
