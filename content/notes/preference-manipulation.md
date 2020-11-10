@@ -4,7 +4,6 @@ tags:
   - api
   - cpcmd
 emoji: 🗳️
-
 ---
 
 ```php
@@ -32,4 +31,3 @@ However it's clear to see JSON has its terse advantages.
 
 - [Collections](https://docs.apiscp.com/admin/cpcmd-examples/#collections), covers `jq` examples (docs.apiscp.com)
 - [jq Tutorial](https://stedolan.github.io/jq/tutorial/) (stedolan.github.io)
-

@@ -5,7 +5,6 @@ tags:
   - api
   - cpcmd
 emoji: 🔑
-
 ---
 
 ```php

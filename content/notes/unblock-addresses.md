@@ -26,4 +26,3 @@ cpcmd rampart:ban-reason
 ```
 
 Problem fat-fingering passwords + dynamic IP? Use `cp.whitelist-access true` to always permit panel access even if banned. Only `rampart:blacklist` has precedence when set.
-
