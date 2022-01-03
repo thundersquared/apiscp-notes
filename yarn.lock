@@ -1732,10 +1732,17 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.14.0":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
+  integrity sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2975,13 +2982,13 @@
     "@theme-ui/css" "^0.4.0-rc.1"
     deepmerge "^4.2.2"
 
-"@theme-ui/color@^0.4.0-highlight.0":
-  version "0.4.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@theme-ui/color/-/color-0.4.0-rc.1.tgz#4ca5701d3d998516573b70fba8195e80395d7e61"
-  integrity sha512-k7TcnzyUxYeaHU3X8qceTP8CeBTf7xBRti8WeXm9PY9W8Viao+zqbpX1nNyvWyNSP76fTAaXj0t//zVgioQAIA==
+"@theme-ui/color@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@theme-ui/color/-/color-0.13.0.tgz#b94d7695157f96e42aa5ad8a2798bccb02acaaa7"
+  integrity sha512-RxYKMuQt84+WQ9JUrr9GjlxnBVwOjof/c13AAxN0aKLvTdUqKmfH0Gm0nsQCbQBBEz1ZrvOTt6DuyeAige1k9g==
   dependencies:
-    "@theme-ui/css" "^0.4.0-rc.1"
-    polished "^3.4.1"
+    "@theme-ui/css" "0.13.0"
+    polished "^4.0.5"
 
 "@theme-ui/components@^0.4.0-rc.1":
   version "0.4.0-rc.1"
@@ -3003,6 +3010,13 @@
     "@emotion/core" "^10.0.0"
     "@theme-ui/css" "^0.4.0-rc.5"
     deepmerge "^4.2.2"
+
+"@theme-ui/css@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@theme-ui/css/-/css-0.13.0.tgz#c7ee0e748c12a347e930a934e561dd51457cecec"
+  integrity sha512-2vh2wggAmuaDhPTgBsMkBqEuaCaZWWzEJG6BMs9FfybHibQYi0MJyLHvi3D11goYH4R6ayynjKEtny/UFEOA9A==
+  dependencies:
+    csstype "^3.0.10"
 
 "@theme-ui/css@^0.4.0-rc.1", "@theme-ui/css@^0.4.0-rc.5":
   version "0.4.0-rc.5"
@@ -5924,6 +5938,11 @@ csstype@^2.2.0, csstype@^2.5.7:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
+
+csstype@^3.0.10:
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.10.tgz#2ad3a7bed70f35b965707c092e5f30b327c290e5"
+  integrity sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -12493,12 +12512,12 @@ pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
-polished@^3.4.1:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-3.6.5.tgz#dbefdde64c675935ec55119fe2a2ab627ca82e9c"
-  integrity sha512-VwhC9MlhW7O5dg/z7k32dabcAFW1VI2+7fSe8cE/kXcfL7mVdoa5UxciYGW2sJU78ldDLT6+ROEKIZKFNTnUXQ==
+polished@^4.0.5:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-4.1.3.tgz#7a3abf2972364e7d97770b827eec9a9e64002cfc"
+  integrity sha512-ocPAcVBUOryJEKe0z2KLd1l9EBa1r5mSwlKpExmrLzsnIzJo4axsoU9O2BjOTkDGDT4mZ0WFE5XKTlR3nLnZOA==
   dependencies:
-    "@babel/runtime" "^7.9.2"
+    "@babel/runtime" "^7.14.0"
 
 portfinder@^1.0.26:
   version "1.0.26"
