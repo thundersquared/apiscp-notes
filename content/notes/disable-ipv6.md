@@ -3,6 +3,8 @@ title: Disabling IPv6
 tags:
   - network
 emoji: 🔌
+queries:
+  - how to disable ipv6
 ---
 
 IPv6 may be managed using `sysctl`:

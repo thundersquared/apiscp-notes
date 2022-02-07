@@ -6,6 +6,8 @@ tags:
   - memcached
   - optimizations
 link: https://github.com/thundersquared/apiscp-memcached
+queries:
+  - how to install memcached
 ---
 
 You can install Memcached via addin.

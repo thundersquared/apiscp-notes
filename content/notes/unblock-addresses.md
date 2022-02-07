@@ -4,6 +4,10 @@ tags:
   - firewall
   - network
 emoji: 🔥
+queries:
+  - how to unblock ip
+  - use rampart to whitelist your ip
+  - how to unban ip
 ---
 
 `rampart:unban()` without an address unbans the connected client address in the following resolution order:

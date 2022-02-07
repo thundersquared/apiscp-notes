@@ -5,6 +5,8 @@ tags:
   - nodejs
 emoji: 🐱
 link: https://github.com/thundersquared/apiscp-yarn
+queries:
+  - how to install yarn
 ---
 
 You can install Yarn via addin.

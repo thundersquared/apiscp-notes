@@ -5,6 +5,8 @@ tags:
   - modules
   - bootstrapper
 emoji: 🐘
+queries:
+  - how to install pecl modules
 ---
 
 Modules are defined in bootstrapper's scope via `pecl_extensions` var.
