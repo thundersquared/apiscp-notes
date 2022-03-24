@@ -24,6 +24,8 @@ memory_limit = 128M
 
 ⚠️ Make sure cgroups allocated memory is equal or more than you set in the override.
 
+⚠️ This can only be applied to PHP CLI. Use policy maps to change PHP FPM's memory limit instead. [Learn more here ↗](https://docs.apiscp.com/admin/PHP-FPM/#policy-maps)
+
 ## Increasing upload size
 
 To increase the upload size limit, you can raise the limit as follows:
