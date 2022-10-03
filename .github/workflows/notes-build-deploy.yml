@@ -1,29 +1,25 @@
 name: Notes Build and Deploy
 on:
   push:
-    branches: [ "master" ]
+    branches: [ 'master' ]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 14.x ]
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: mskelton/setup-yarn@v1
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          node-version: '14.x'
       - name: Add Gatsby CLI to properly build the app
-        run: npm -g i gatsby-cli
+        run: yarn global add gatsby-cli
       - name: Install all dependencies
-        run: npm install
+        run: yarn install
       - name: Perform a cleanup of existing artifacts
-        run: npm run clean
+        run: yarn clean
       - name: Build app for production
-        run: npm run prod
+        run: yarn prod
       - name: Add a CNAME for deployment
-        run: npm run add-cname
+        run: yarn add-cname
       - name: Deploy to Github Pages
-        run: npm run deploy
+        run: yarn deploy
