@@ -1,0 +1,29 @@
+name: Notes Build and Deploy
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 14.x ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Add Gatsby CLI to properly build the app
+        run: npm -g i gatsby-cli
+      - name: Install all dependencies
+        run: npm install
+      - name: Perform a cleanup of existing artifacts
+        run: npm run clean
+      - name: Build app for production
+        run: npm run prod
+      - name: Add a CNAME for deployment
+        run: npm run add-cname
+      - name: Deploy to Github Pages
+        run: npm run deploy
