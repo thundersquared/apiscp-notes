@@ -1,0 +1,4 @@
+[submodule "source/_notes"]
+	path = source/_notes
+	url = https://github.com/thundersquared/apiscp-notes.git
+	branch = docs
