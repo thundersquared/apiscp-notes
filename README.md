@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://thundersquared.github.io/apiscp-notes/">
-    <img src="static/images/apiscp-icon.png" width="128" />
+    <img src="images/apiscp-icon.png" width="128" />
   </a>
   
   <h2>Notes and cheats for a better ApisCP administration experience.</h2>
