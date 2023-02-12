@@ -12,8 +12,12 @@ emoji: 📰
 Here's a step-by-step copy-paste tutorial:
 
 ```bash
+# Setup permissions in case you run PHP-FPM under apache user. If not this step can be skipped.
+chown admin12:apache /home/virtual/benchmark.test/var/www/redis.sock
+chmod 0660 /home/virtual/benchmark.test/var/www/redis.sock
+
 # Create a new Redis instance for benchmark.test named "wp-test" listening on /tmp/redis.sock
-cpcmd -d benchmark.test redis:create wp-test '[unixsocket:/var/tmp/redis.sock]'
+cpcmd -d benchmark.test redis:create wp-test '[unixsocket:/var/www/redis.sock]'
 
 # Switch to benchmark.test account to configure plugin
 su benchmark.test
@@ -23,9 +27,10 @@ cd /var/www/html
 wp-cli plugin install --activate redis-cache
 
 # Define Redis path
-wp-cli config set WP_REDIS_PATH /var/tmp/redis.sock
-wp-cli config set WP_REDIS_HOST /var/tmp/redis.sock
 wp-cli config set WP_REDIS_SCHEME unix
+wp-cli config set WP_REDIS_PATH /var/www/redis.sock
+wp-cli config set WP_REDIS_HOST /var/www/redis.sock
+
 
 # Enable Redis plugin
 wp-cli redis enable
