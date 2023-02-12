@@ -13,7 +13,7 @@ Here's a step-by-step copy-paste tutorial:
 
 ```bash
 # Create a new Redis instance for benchmark.test named "wp-test" listening on /tmp/redis.sock
-cpcmd -d benchmark.test redis:create wp-test '[unixsocket:/tmp/redis.sock]'
+cpcmd -d benchmark.test redis:create wp-test '[unixsocket:/var/tmp/redis.sock]'
 
 # Switch to benchmark.test account to configure plugin
 su benchmark.test
@@ -23,7 +23,9 @@ cd /var/www/html
 wp-cli plugin install --activate redis-cache
 
 # Define Redis path
-wp-cli config set WP_REDIS_PATH /tmp/redis.sock
+wp-cli config set WP_REDIS_PATH /var/tmp/redis.sock
+wp-cli config set WP_REDIS_HOST /var/tmp/redis.sock
+wp-cli config set WP_REDIS_SCHEME unix
 
 # Enable Redis plugin
 wp-cli redis enable
