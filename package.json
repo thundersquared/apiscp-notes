@@ -20,7 +20,7 @@
     "deploy": "gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/thundersquared/apiscp-notes.git"
   },
   "dependencies": {
-    "@theme-ui/color": "^0.4.0-highlight.0",
+    "@theme-ui/color": "^0.15.5",
     "@theme-ui/color-modes": "^0.4.0-highlight.0",
     "@theme-ui/core": "^0.4.0-rc.5",
     "gatsby": "^2.24.63",
