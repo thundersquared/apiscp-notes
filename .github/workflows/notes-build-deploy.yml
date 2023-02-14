@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: mskelton/setup-yarn@v1
         with:
           node-version: '14.x'
       - name: Add Gatsby CLI to properly build the app
-        run: yarn global add gatsby-cli
+        run: yarn global add gatsby-cli@latest-v2
       - name: Install all dependencies
         run: yarn install
       - name: Perform a cleanup of existing artifacts
