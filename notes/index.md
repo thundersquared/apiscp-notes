@@ -2,10 +2,8 @@
 # https://vitepress.dev/reference/default-theme-home-page
 # layout: home
 
-hero:
-  name: "ApisCP"
-  text: "Notes"
-  tagline: Notes and cheats for a better ApisCP administration experience
+title: Home
+hide_title: true
 ---
 
 <div align="center">

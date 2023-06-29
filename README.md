@@ -25,7 +25,7 @@ cd apiscp-notes
 yarn
 
 # Locally build and serve project
-yarn develop
+yarn docs:dev
 ```
 
 ## Contributing
