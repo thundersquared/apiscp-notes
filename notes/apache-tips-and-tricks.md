@@ -5,6 +5,7 @@ tags:
   - rewriterules
   - websockets
 emoji: 🦅
+outline: deep
 ---
 
 These are some of the most useful .htaccess rules you'd need.
@@ -16,7 +17,10 @@ Enabling RewriteEngine and setting RewriteBase
 RewriteEngine On
 RewriteBase /
 ```
-> Setting the RewriteBase **is required** due to rule inheritance with synthetic addon domains and subdomains.  [Learn more here ↗](https://github.com/apisnetworks/httpd-apache/blob/master/SOURCES/httpd-apnscp-rewrite-map.conf)
+
+::: warning
+Setting the RewriteBase **is required** due to rule inheritance with synthetic addon domains and subdomains. [Learn more here ↗](https://github.com/apisnetworks/httpd-apache/blob/master/SOURCES/httpd-apnscp-rewrite-map.conf)
+:::
 
 Enable caching
 ```
@@ -41,19 +45,25 @@ RewriteCond %{HTTP:Upgrade} =websocket [NC]
 RewriteCond %{HTTP:Connection} =upgrade [NC]
 RewriteRule ^ ws://127.0.0.1:40001%{REQUEST_URI} [P,L]
 ```
-> Note that 40001 is the port your app is listening to locally.
+::: info
+Note that 40001 is the port your app is listening to locally.
+:::
 
 Proxy generic HTTP requests
 ```
 RewriteRule ^ http://127.0.0.1:40001%{REQUEST_URI} [P,L,QSA]
 ```
-> Note that 40001 is the port your app is listening to locally.
+::: info
+Note that 40001 is the port your app is listening to locally.
+:::
 
 Using a match result in a RewriteRule
 ```
 RewriteRule ^(.*)$ http://127.0.0.1:40001/api/$1 [P,L,QSA]
 ```
-> Note that a request to `/example` will be proxied to `http://127.0.0.1:40001/api/example`.
+::: info
+Note that a request to `/example` will be proxied to `http://127.0.0.1:40001/api/example`.
+:::
 
 ## Usage
 

@@ -20,7 +20,7 @@ dnf install -y podman
 systemctl reload fsmount
 ```
 
-In order for containers to keep running, you need to (tell systemd to linger your user)[https://unix.stackexchange.com/a/403386/187291]:
+In order for containers to keep running, you need to [tell systemd to linger your user](https://unix.stackexchange.com/a/403386/187291):
 
 ```bash
 loginctl show-user <user> --property Linger
