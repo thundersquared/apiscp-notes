@@ -31,28 +31,22 @@ export default defineConfig({
       },
       ...generateSidebar({
         documentRootPath: "./notes/",
-        // scanStartPath: null,
-        // resolvePath: null,
+        scanStartPath: '.',
+        // resolvePath: '.',
         rootGroupText: "Notes",
-        // rootGroupLink: 'https://github.com/jooy2',
         useTitleFromFileHeading: true,
-        useTitleFromFrontmatter: true,
-        // hyphenToSpace: true,
-        // underscoreToSpace: true,
-        // collapsed: true,
-        // collapseDepth: 2,
-        // includeDotFiles: false,
-        // includeRootIndexFile: true,
-        // includeEmptyFolder: false,
-        // convertSameNameSubFileToGroupIndexPage: false
-        // folderLinkNotIncludesFileName: false
+        useTitleFromFrontmatter: true
       }),
     ],
 
     socialLinks: [
-      { icon: "discord", link: "https://discord.gg/wDBTz6V" },
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "discord", link: "https://discord.gg/wDBTz6V" },
     ],
+
+    editLink: {
+      pattern: 'https://github.com/thundersquared/apiscp-notes/edit/docs/notes/:path'
+    },
 
     docFooter: {
       prev: false,

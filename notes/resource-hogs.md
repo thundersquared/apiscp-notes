@@ -4,7 +4,6 @@ tags:
   - cgroups
   - resources
 emoji: 🐷
-
 ---
 
 ## CPU/memory
@@ -38,7 +37,9 @@ cpcmd -o json admin:get-usage bandwidth | jq 'to_entries | sort_by(.value.sum)'
 
 ## Storage
 
-`repquota -g $(findmnt -no SOURCE --target /home/virtual) | sort -n --key=3` 
+```bash
+repquota -g $(findmnt -no SOURCE --target /home/virtual) | sort -n --key=3
+```
 
 If on a single mount, `$(...)` can be replaced with `/` or to report quotas for all mounts, `-a`.
 

@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://thundersquared.github.io/apiscp-notes/">
-    <img src="images/apiscp-icon.png" width="128" />
+    <img src="notes/images/apiscp-icon.png" width="128" />
   </a>
   
   <h2>Notes and cheats for a better ApisCP administration experience.</h2>
@@ -34,4 +34,4 @@ Submit a PR and have fun!
 
 ## Credits
 
-This project is based on Zander Martineau's [Code Notes](https://github.com/MrMartineau/gatsby-starter-code-notes) gimmick—show him some love! :kissing_heart:️
+This collection of notes is a collaborative effort of Apis Netwroks and [community contributors](https://github.com/thundersquared/apiscp-notes/graphs/contributors) to make panel administration easier.

@@ -18,7 +18,7 @@ const { page } = useData()
 <style scoped>
 .page-title {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 36px;
 }
 
 .page-emoji {
