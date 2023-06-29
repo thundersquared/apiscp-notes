@@ -4,8 +4,6 @@ tags:
   - postfix
   - mail
 emoji: 🔎
-
-
 ---
 
 Add a header check with a `WARN` disposition for subjects.

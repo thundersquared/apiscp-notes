@@ -51,4 +51,3 @@ cpcmd -o json admin:get-usage storage | jq 'to_entries | sort_by(.value.qused)'
 ```
 
 `qused` is storage blocks used in 4 KB units. `fused` is inode usage.
-

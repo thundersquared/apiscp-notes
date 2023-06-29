@@ -26,6 +26,6 @@ To start using your freshly installed `memcached`:
 memcached -l 127.0.0.1 -p 40010 -m 128
 ```
 
-<AlertBox level="danger">
+::: warning
 **Do not run** memcached without binding locally or to a unix-domain socket (`-s /path/to/socket`). See also [Memcached DDoS explained](https://www.akamai.com/us/en/resources/our-thinking/threat-advisories/ddos-reflection-attack-memcached-udp.jsp).
-</AlertBox>
+:::
