@@ -1,0 +1,62 @@
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-c-brand: hsl(170, 75%, 35%);
+    --vp-c-brand-light: hsl(170, 75%, 50%);
+    --vp-c-brand-lighter: hsl(170, 75%, 75%);
+    --vp-c-brand-lightest: hsl(170, 75%, 95%);
+    --vp-c-brand-dark: hsl(170, 75%, 30%);
+    --vp-c-brand-darker: hsl(170, 75%, 20%);
+    --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+
+    --vp-code-block-bg: hsl(170, 15%, 9%);
+
+    --vp-custom-block-info-border: rgba(113, 113, 122, 0.2);
+    --vp-custom-block-info-text: rgb(55, 65, 81);
+    --vp-custom-block-info-bg: rgba(250, 250, 250, 0.5);
+    --vp-custom-block-info-code-bg: rgba(113, 113, 122, 0.125);
+
+    --vp-custom-block-tip-border: rgba(16, 185, 129, 0.2);
+    --vp-custom-block-tip-text: rgb(5, 150, 105);
+    --vp-custom-block-tip-bg: rgba(236, 253, 245, 0.5);
+    --vp-custom-block-tip-code-bg: rgba(16, 185, 129, 0.125);
+
+    --vp-custom-block-warning-border: rgba(245, 158, 11, 0.2);
+    --vp-custom-block-warning-text: rgb(150, 108, 3);
+    --vp-custom-block-warning-bg: rgba(255, 251, 235, 0.5);
+    --vp-custom-block-warning-code-bg: rgba(245, 158, 11, 0.125);
+
+    --vp-custom-block-danger-border: rgba(239, 68, 68, 0.3);
+    --vp-custom-block-danger-text: rgb(239, 68, 68);
+    --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.1);
+    --vp-custom-block-danger-code-bg: rgba(239, 68, 68, 0.125);
+}
+
+.dark {
+    --vp-c-bg: hsl(170, 21%, 5%);
+    --vp-c-bg-alt: hsl(170, 15%, 9%);
+    --vp-sidebar-bg-color: var(--vp-c-bg); 
+    --vp-code-block-bg: var(--vp-c-bg-alt);
+
+    --vp-custom-block-info-border: rgba(113, 113, 122, 0.3);
+    --vp-custom-block-info-text: rgb(228, 228, 231);
+    --vp-custom-block-info-bg: rgba(113, 113, 122, 0.1);
+    --vp-custom-block-info-code-bg: rgba(113, 113, 122, 0.125);
+
+    --vp-custom-block-tip-border: rgba(16, 185, 129, 0.3);
+    --vp-custom-block-tip-text: rgb(167, 243, 208);
+    --vp-custom-block-tip-bg: rgba(16, 185, 129, 0.1);
+    --vp-custom-block-tip-code-bg: rgba(16, 185, 129, 0.125);
+
+    --vp-custom-block-warning-border: rgba(245, 158, 11, 0.3);
+    --vp-custom-block-warning-text: rgb(253, 230, 138);
+    --vp-custom-block-warning-bg: rgba(245, 158, 11, 0.1);
+    --vp-custom-block-warning-code-bg: rgba(245, 158, 11, 0.125);
+
+    --vp-custom-block-danger-border: rgba(239, 68, 68, 0.3);
+    --vp-custom-block-danger-text: rgb(239, 68, 68);
+    --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.1);
+    --vp-custom-block-danger-code-bg: rgba(239, 68, 68, 0.125);
+}

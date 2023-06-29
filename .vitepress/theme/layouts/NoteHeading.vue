@@ -1,18 +1,15 @@
 <script setup>
 import { useData } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-
-const { Layout } = DefaultTheme
 const { page } = useData()
 </script>
 
 <template>
-    <Layout>
-        <template #doc-before>
-            <h1 class="page-title"><span v-show="page.frontmatter.emoji" class="page-emoji">{{ page.frontmatter.emoji
-            }}</span> {{ page.title }}</h1>
-        </template>
-    </Layout>
+    <h1 class="page-title">
+        <span v-show="page.frontmatter.emoji" class="page-emoji">
+            {{ page.frontmatter.emoji }}
+        </span>
+        {{ page.title }}
+    </h1>
 </template>
 
 <style scoped>
