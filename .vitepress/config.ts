@@ -4,7 +4,7 @@ import { generateSidebar } from "vitepress-sidebar";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "./notes/",
-  lang: 'en-US',
+  lang: "en-US",
   title: "ApisCP Notes",
   description:
     "Notes and cheats for a better ApisCP administration experience.",
@@ -31,27 +31,34 @@ export default defineConfig({
       },
       ...generateSidebar({
         documentRootPath: "./notes/",
-        scanStartPath: '.',
+        scanStartPath: ".",
         // resolvePath: '.',
         rootGroupText: "Notes",
         useTitleFromFileHeading: true,
-        useTitleFromFrontmatter: true
+        useTitleFromFrontmatter: true,
       }),
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-      { icon: "discord", link: "https://discord.gg/wDBTz6V" },
+      {
+        icon: "github",
+        link: "https://github.com/thundersquared/apiscp-notes",
+      },
+      {
+        icon: "discord",
+        link: "https://discord.gg/wDBTz6V",
+      },
     ],
 
     editLink: {
-      pattern: 'https://github.com/thundersquared/apiscp-notes/edit/docs/notes/:path'
+      pattern:
+        "https://github.com/thundersquared/apiscp-notes/edit/docs/notes/:path",
     },
 
     docFooter: {
       prev: false,
-      next: false
-    }
+      next: false,
+    },
   },
   cleanUrls: true,
   lastUpdated: true,
