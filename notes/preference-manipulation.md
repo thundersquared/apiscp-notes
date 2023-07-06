@@ -29,5 +29,15 @@ However it's clear to see JSON has its terse advantages.
 
 ## See also
 
-- [Collections](https://docs.apiscp.com/admin/cpcmd-examples/#collections), covers `jq` examples (docs.apiscp.com)
-- [jq Tutorial](https://stedolan.github.io/jq/tutorial/) (stedolan.github.io)
+<CardGroup cols="2">
+  <Card title="Collections" icon="layer-group" color="#169c86" href="https://docs.apiscp.com/admin/cpcmd-examples/#collections">
+  
+  Covers `jq` examples (docs.apiscp.com)
+  
+  </Card>
+  <Card title="jq Tutorial" icon="graduation-cap" color="#3399f3" href="https://stedolan.github.io/jq/tutorial/">
+  
+  Jump on a `jq` tutorial (stedolan.github.io)
+  
+  </Card>
+</CardGroup>

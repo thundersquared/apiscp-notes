@@ -18,9 +18,11 @@ RewriteEngine On
 RewriteBase /
 ```
 
-::: warning
-Setting the RewriteBase **is required** due to rule inheritance with synthetic addon domains and subdomains. [Learn more here ↗](https://github.com/apisnetworks/httpd-apache/blob/master/SOURCES/httpd-apnscp-rewrite-map.conf)
-:::
+<Warning>
+
+Setting the RewriteBase **is required** due to rule inheritance with synthetic addon domains and subdomains. [Learn more here](https://github.com/apisnetworks/httpd-apache/blob/master/SOURCES/httpd-apnscp-rewrite-map.conf)
+
+</Warning>
 
 Enable caching
 ```
@@ -45,25 +47,23 @@ RewriteCond %{HTTP:Upgrade} =websocket [NC]
 RewriteCond %{HTTP:Connection} =upgrade [NC]
 RewriteRule ^ ws://127.0.0.1:40001%{REQUEST_URI} [P,L]
 ```
-::: info
-Note that 40001 is the port your app is listening to locally.
-:::
+<Note>Note that 40001 is the port your app is listening to locally.</Note>
 
 Proxy generic HTTP requests
 ```
 RewriteRule ^ http://127.0.0.1:40001%{REQUEST_URI} [P,L,QSA]
 ```
-::: info
-Note that 40001 is the port your app is listening to locally.
-:::
+<Note>Note that 40001 is the port your app is listening to locally.</Note>
 
 Using a match result in a RewriteRule
 ```
 RewriteRule ^(.*)$ http://127.0.0.1:40001/api/$1 [P,L,QSA]
 ```
-::: info
-Note that a request to `/example` will be proxied to `http://127.0.0.1:40001/api/example`.
-:::
+<Info>
+
+A request to `/example` will be proxied to `http://127.0.0.1:40001/api/example`.
+
+</Info>
 
 ## Usage
 
