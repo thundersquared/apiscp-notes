@@ -18,7 +18,11 @@ next:
   link: /install-php-pecl-modules
 ---
 
-PHP-FPM uses `.user.ini` in each document root to set PHP configuration at runtime. [Learn more here](https://docs.apiscp.com/admin/PHP-FPM/#user-overrides)
+<Card title="Runtime PHP configuration" color="#4F5B93" icon="gears" href="https://docs.apiscp.com/admin/PHP-FPM/#user-overrides">
+
+Learn more about PHP-FPM usage of `.user.ini` in each document root to set PHP configuration at runtime.
+
+</Card>
 
 ## Increasing PHP memory
 
@@ -28,13 +32,13 @@ To increase the memory limit, you can define a new limit as follows:
 memory_limit = 128M
 ```
 
-::: warning
-Make sure cgroups allocated memory is equal or more than you set in the override.
-:::
+<Warning>Make sure cgroups allocated memory is equal or more than you set in the override.</Warning>
 
-::: warning
+<Warning>
+
 This can only be applied to PHP CLI. Use policy maps to change PHP FPM's memory limit instead. [Learn more here](https://docs.apiscp.com/admin/PHP-FPM/#policy-maps)
-:::
+
+</Warning>
 
 ## Increasing upload size
 

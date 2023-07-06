@@ -41,7 +41,7 @@ cpcmd -o json admin:get-usage bandwidth | jq 'to_entries | sort_by(.value.sum)'
 repquota -g $(findmnt -no SOURCE --target /home/virtual) | sort -n --key=3
 ```
 
-If on a single mount, `$(...)` can be replaced with `/` or to report quotas for all mounts, `-a`.
+If on a single mount, `$(...)` can be replaced with `/` or to report quotas for all mounts, using `-a`.
 
 `admin:get-usage('storage')` works similarly as the bandwidth example above.
 
