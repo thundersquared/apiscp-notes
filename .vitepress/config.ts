@@ -1,8 +1,9 @@
-import { defineConfig } from "vitepress";
+import { defineConfigWithTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import type { Config as ThemeConfig } from "@apiscp/vitepress-theme/src/config";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineConfigWithTheme<ThemeConfig>({
   srcDir: "./notes/",
   lang: "en-US",
   title: "ApisCP Notes",
@@ -10,8 +11,15 @@ export default defineConfig({
     "Notes and cheats for a better ApisCP administration experience.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    autoTitle: true,
+
     search: {
-      provider: "local",
+      provider: "algolia",
+      options: {
+        indexName: "apiscpnotes",
+        appId: "TA7YISSZ4O",
+        apiKey: "64283e3b28dd9a7112d9a45ec6812751",
+      },
     },
 
     nav: [

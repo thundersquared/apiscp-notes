@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@apiscp/vitepress-theme": "^1.0.0",
     "vitepress": "^1.0.0-beta.3",
     "vitepress-sidebar": "^1.8.1"
   },
@@ -9,6 +10,5 @@
     "docs:preview": "vitepress preview"
   },
   "module": "es2022",
-  "type": "module",
-  "dependencies": {}
+  "type": "module"
 }
