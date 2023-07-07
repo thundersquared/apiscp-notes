@@ -133,7 +133,7 @@
     "@algolia/logger-common" "4.18.0"
     "@algolia/requester-common" "4.18.0"
 
-"@apiscp/vitepress-theme@^1.0.0":
+"@apiscp/vitepress-theme@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@apiscp/vitepress-theme/-/vitepress-theme-1.0.1.tgz#e664805dd6484cf7ed2096889be8214430b889e3"
   integrity sha512-40Z8zhjGSoWox/NwR51MkuvUxLpcagwl1VusC7AWSuvUieKkE0PDUSFnxcYABjFCKt5RuBFMKiuh61xECNrudw==
