@@ -1,5 +1,6 @@
 import { defineConfigWithTheme } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import buildSidebar from "./buildSidebar";
 import type { Config as ThemeConfig } from "@apiscp/vitepress-theme/src/config";
 
 // https://vitepress.dev/reference/site-config
@@ -37,13 +38,12 @@ export default defineConfigWithTheme<ThemeConfig>({
           { text: "Discord", link: "https://discord.gg/wDBTz6V" },
         ],
       },
-      ...generateSidebar({
-        documentRootPath: "./notes/",
-        scanStartPath: ".",
-        // resolvePath: '.',
-        rootGroupText: "Notes",
-        useTitleFromFileHeading: true,
-        useTitleFromFrontmatter: true,
+      buildSidebar({
+        rootPath: "./notes",
+        title: "Notes",
+        exclude: [
+          'index.md',
+        ],
       }),
     ],
 
