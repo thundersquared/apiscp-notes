@@ -1,5 +1,5 @@
 ---
-title: Multi-node commands
+title: Cross-node commands
 tags:
   - ansible
   - playbook
