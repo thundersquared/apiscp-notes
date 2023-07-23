@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@apiscp/vitepress-theme": "^1.0.3",
+    "@apiscp/vitepress-theme": "^1.0.4",
     "gray-matter": "^4.0.3",
     "vitepress": "^1.0.0-beta.6"
   },

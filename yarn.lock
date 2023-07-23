@@ -133,10 +133,10 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@apiscp/vitepress-theme@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@apiscp/vitepress-theme/-/vitepress-theme-1.0.3.tgz#62b95f953ed0ac7a024f39af98a722dbaf0d5d93"
-  integrity sha512-QbRq53AmJi+BA0TxWTv83FwCz/eAwPlSwBmzPvJGzw9WGbEFvKP/PU9A2OKhvy6UwP7bel/NPA0ydwtqTK9VgQ==
+"@apiscp/vitepress-theme@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@apiscp/vitepress-theme/-/vitepress-theme-1.0.4.tgz#73a488566d928ea7c61513baa029b18a0b95ed74"
+  integrity sha512-gr2Hks1VVqKX4x8+X+mCKPzwT+StCoLOKzdIeOZE/6EOvTeX90p21ga3JHkmm/e50/Ab52SPPCAxGwGZjn2XdA==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^6.4.0"
     "@fortawesome/free-regular-svg-icons" "^6.4.0"
