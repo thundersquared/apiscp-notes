@@ -43,6 +43,12 @@ all:
 
 </Note>
 
+<Card title="Ansible inventory parameters" icon="toolbox" color="#5bbdbf" href="https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#connecting-to-hosts-behavioral-inventory-parameters">
+
+Learn more about customizing your inventory parameters.
+
+</Card>
+
 ## Ansible configuration
 
 At this point, you'll have to manually tell `ansible` which inventory file to use like so:
