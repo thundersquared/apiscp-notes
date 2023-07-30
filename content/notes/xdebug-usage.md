@@ -12,7 +12,7 @@ Xdebug generates profiling data compatible with Cachegrind. [KCacheGrind](https:
 ```bash
 cd /usr/local/apnscp/resources/playbooks
 
-ansible-playbook bootstrap.yml  --tags=php/install-pecl-module,apnscp/php-filesystem-template --extra-vars=pecl_extensions='{"name":"xdebug","zend":true,"extension":"https://github.com/xdebug/xdebug/archive/2.9.6.tar.gz"}' --extra-vars=force_module_rebuild=false
+ansible-playbook bootstrap.yml  --tags=php/install-extensions,apnscp/php-filesystem-template --extra-vars=pecl_extensions='{"name":"xdebug","zend":true,"extension":"https://github.com/xdebug/xdebug/archive/2.9.6.tar.gz"}' --extra-vars=force_module_rebuild=false
 ```
 
 Add Xdebug profiling support to PHP. Depending upon [configuration visibility](https://docs.apiscp.com/admin/PHP-FPM/#override-precedence), siteXX/fst/etc/phpXX.d/ or .user.ini are preferred.

@@ -22,8 +22,8 @@ After setting `pecl_extensions` to be installed, you should *actually* install t
 
 ```bash
 # Build all modules
-upcp -sb php/install-pecl-module
+upcp -sb php/install-extensions
 # Build all modules for Multi-PHP installs
 cd /usr/local/apnscp/resources/playbooks
-ansible-playbook bootstrap.yml --tags=php/install-pecl-module --extra-vars=php_version=7.4 --extra-vars=multiphp_build=true
+ansible-playbook bootstrap.yml --tags=php/install-extensions --extra-vars=php_version=7.4 --extra-vars=multiphp_build=true
 ```
