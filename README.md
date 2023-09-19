@@ -34,4 +34,4 @@ Submit a PR and have fun!
 
 ## Credits
 
-This collection of notes is a collaborative effort of Apis Netwroks and [community contributors](https://github.com/thundersquared/apiscp-notes/graphs/contributors) to make panel administration easier.
+This collection of notes is a collaborative effort of Apis Networks and [community contributors](https://github.com/thundersquared/apiscp-notes/graphs/contributors) to make panel administration easier.
