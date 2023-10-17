@@ -10,6 +10,9 @@ emoji: 📰
 ---
 
 Here's a step-by-step copy-paste tutorial:
+Requirements: 
+ - related Site Account has ssh enabled
+ - Scope cp.config ssh:user_daemons is enabled
 
 ```bash
 # Create a new Redis instance for benchmark.test named "wp-test" listening on /tmp/redis.sock
