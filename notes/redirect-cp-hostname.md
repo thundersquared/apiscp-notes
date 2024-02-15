@@ -21,6 +21,6 @@ RewriteRule ^(.*)$ %{REQUEST_SCHEME}://%{ENV:HOSTNAME}:%{SERVER_PORT}/$1 [R,L]
 
 Then restart ApisCP,
 
-```
+```bash
 systemctl restart apiscp
 ```

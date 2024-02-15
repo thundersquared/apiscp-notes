@@ -10,21 +10,21 @@ emoji: 🐷
 
 `systemd-cgtop` provides a top-like interface for all control groups. Processes spawned within the context of a site are governed by resource limits assigned in `cgroup` service class.
 
-| Hotkey | Sort field        |
-| ------ | ----------------- |
-| m      | Memory            |
-| c      | CPU               |
-| t      | Tasks (PID count) |
+| Hotkey       | Sort field        |
+| ------------ | ----------------- |
+| <kbd>m</kbd> | Memory            |
+| <kbd>c</kbd> | CPU               |
+| <kbd>t</kbd> | Tasks (PID count) |
 
 ## Per process
 
 Run `top`. Behaves similarly to `systemd-cgtop`.
 
-| Hotkey    | Sort field      |
-| --------- | --------------- |
-| shift + M | Memory          |
-| shift + P | CPU             |
-| shift + T | Cumulative time |
+| Hotkey                          | Sort field      |
+| ------------------------------- | --------------- |
+| <kbd>shift</kbd> + <kbd>M</kbd> | Memory          |
+| <kbd>shift</kbd> + <kbd>P</kbd> | CPU             |
+| <kbd>shift</kbd> + <kbd>T</kbd> | Cumulative time |
 
 ## Bandwidth
 

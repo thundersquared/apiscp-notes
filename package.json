@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "@apiscp/vitepress-theme": "^1.0.8",
+    "@apiscp/vitepress-theme": "^1.0.9",
     "gray-matter": "^4.0.3",
-    "vitepress": "^1.0.0-rc.29"
+    "vitepress": "^1.0.0-rc.42"
   },
   "scripts": {
     "docs:dev": "vitepress dev",

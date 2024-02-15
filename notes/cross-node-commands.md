@@ -126,6 +126,6 @@ apiscps 'borgmatic info'
 # Escape quoted values
 apiscps "cpcmd scope:set cp.nightly-updates 'Mon..Fri 20:00'"
 
-#Shell interpolation
+# Shell interpolation
 apiscps 'dnf remove $(rpm -qa kernel-ml)'
 ```
