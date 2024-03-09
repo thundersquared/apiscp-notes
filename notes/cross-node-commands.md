@@ -72,7 +72,7 @@ transfer_method = scp
 You should now be able to omit `-i inventory.yml` as follows:
 
 ```bash
-ansible all -i inventory.yml -m ping
+ansible all -m ping
 ```
 
 ## Shell shortcut
