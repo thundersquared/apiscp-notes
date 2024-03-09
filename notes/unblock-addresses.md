@@ -35,3 +35,11 @@ All commands above can be also run against a specific IP e.g.
 Problem fat-fingering passwords + dynamic IP? Use `cp.whitelist-access true` to
 always permit panel access even if banned. Only `rampart:blacklist` has
 precedence when set.
+
+## Temporarily whitelist IP for inbound email
+
+Temporarily whitelisting a blocked IP (i.e.: listed at spamcop.net) can be achived by adding the IP to `/etc/postfix/postscreen_access.cidr`, either IP or in CIDR notation (`1.2.3.4/24`), then applying via `postmap`:
+
+```bash
+postmap /etc/postfix/postscreen_access.cidr
+```
