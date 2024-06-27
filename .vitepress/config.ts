@@ -70,4 +70,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
   cleanUrls: true,
   lastUpdated: true,
+  ignoreDeadLinks: [
+    // ignore all localhost links
+    /^https?:\/\/localhost/,
+  ]
 });
