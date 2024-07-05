@@ -15,11 +15,24 @@ export default defineConfigWithTheme<ThemeConfig>({
     autoTitle: true,
 
     search: {
-      provider: "algolia",
+      provider: "local",
       options: {
-        indexName: "apiscpnotes",
-        appId: "TA7YISSZ4O",
-        apiKey: "64283e3b28dd9a7112d9a45ec6812751",
+        _render(src, env, md) {
+          let content = "";
+          const rendered = md.render(src, env);
+
+          // Excluding pages from search
+          if (env.frontmatter?.search === false) return "";
+
+          // Transforming content to include title and tags
+          if (env.frontmatter?.title)
+            content += md.render(`# ${env.frontmatter.title}`);
+
+          if (env.frontmatter?.tags)
+            content += md.render(`- ${env.frontmatter.tags.join("\n- ")}`);
+
+          return `${content}\n${rendered}`;
+        },
       },
     },
 
@@ -41,9 +54,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       buildSidebar({
         rootPath: "./notes",
         title: "Notes",
-        exclude: [
-          'index.md',
-        ],
+        exclude: ["index.md"],
       }),
     ],
 
@@ -73,5 +84,5 @@ export default defineConfigWithTheme<ThemeConfig>({
   ignoreDeadLinks: [
     // ignore all localhost links
     /^https?:\/\/localhost/,
-  ]
+  ],
 });

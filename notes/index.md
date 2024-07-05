@@ -4,6 +4,7 @@
 
 title: Home
 hide_title: true
+search: false
 ---
 
 <div align="center">
