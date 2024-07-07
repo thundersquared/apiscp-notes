@@ -71,6 +71,12 @@ We now need to apply the changes by invoking a Postgres reconfiguration via Ansi
 upcp -sb pgsql/install
 ```
 
+<Note>
+
+You can now achieve this on edge and edge-master by using `pgsql.listening-ips` scope: `cpcmd scope:set pgsql.listening-ips '["127.0.0.1", "::1", "10.89.0.1"]'` will update the bind address definition and will trigger bootstrapper to apply `pgsql/install`.
+
+</Note>
+
 After playbooks completes all actions, Podman containers will be able to access Host Postgres via:
 - `host.containers.internal:5432`
 - `host.docker.internal:5432`
