@@ -8,7 +8,7 @@ search: false
 ---
 
 <div align="center">
-  <a href="https://thundersquared.github.io/apiscp-notes/">
+  <a href="/">
     <img src="../images/apiscp-icon.png" width="128" />
   </a>
 

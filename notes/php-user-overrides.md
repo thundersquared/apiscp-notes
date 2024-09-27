@@ -32,7 +32,7 @@ To increase the memory limit, you can define a new limit as follows:
 memory_limit = 128M
 ```
 
-<Warning>Make sure cgroups allocated memory is equal or more than you set in the override.</Warning>
+<Warning>Make sure cgroups allocated memory is equal or more than what you set in the override.</Warning>
 
 <Warning>
 

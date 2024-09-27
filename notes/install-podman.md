@@ -10,6 +10,16 @@ queries:
   - how to install docker
 ---
 
+<Warning>
+
+Podman interferes with typical ApisCP behaviour, changing firewall rules to accomodate container routing definitions.
+
+A side-effect of this behaviour manifests with containers becoming unresponsive when accessing exposed ports form the host or outside world, as firewall rules are refreshed on the panel's side efectively removing Podman-added rules.
+
+Docker is a preferred alternative in this case.
+
+</Warning>
+
 Podman is the supported drop-in replacement for RHEL 8+.
 
 To install Podman, run the following commands:

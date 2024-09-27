@@ -73,7 +73,7 @@ upcp -sb pgsql/install
 
 <Note>
 
-You can now achieve this on edge and edge-master by using `pgsql.listening-ips` scope: `cpcmd scope:set pgsql.listening-ips '["127.0.0.1", "::1", "10.89.0.1"]'` will update the bind address definition and will trigger bootstrapper to apply `pgsql/install`.
+You can now achieve this by using `pgsql.listening-ips` scope: `cpcmd scope:set pgsql.listening-ips '["127.0.0.1", "::1", "10.89.0.1"]'` will update the bind address definition and will trigger bootstrapper to apply `pgsql/install`.
 
 </Note>
 

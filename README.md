@@ -4,12 +4,6 @@
   </a>
   
   <h2>Notes and cheats for a better ApisCP administration experience.</h2>
-  
-  <p>
-    <a href="https://travis-ci.com/thundersquared/apiscp-notes">
-      <img src="https://travis-ci.com/thundersquared/apiscp-notes.svg?branch=master" alt="This repo's build status." />
-    </a>
-  </p>
 </div>
 
 ## Install
