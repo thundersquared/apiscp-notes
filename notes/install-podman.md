@@ -14,9 +14,13 @@ queries:
 
 Podman interferes with typical ApisCP behaviour, changing firewall rules to accomodate container routing definitions.
 
+</Error>
+
+<Note>
+
 A side-effect of this behaviour manifests with containers becoming unresponsive when accessing exposed ports form the host or outside world, as firewall rules are refreshed on the panel's side efectively removing Podman-added rules.
 
-</Error>
+</Note>
 
 <Warning>
 
