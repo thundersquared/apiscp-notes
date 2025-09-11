@@ -44,7 +44,7 @@ systemctl stop monit.service
 cpcmd scope:set cp.bootstrapper mariadb_version "10.11"
 
 # Make a copy of the repo definition
-mysql -v
+mysql --version
 cat /etc/yum.repos.d/mariadb.repo
 mv /etc/yum.repos.d/mariadb.repo{,.bak}
 
