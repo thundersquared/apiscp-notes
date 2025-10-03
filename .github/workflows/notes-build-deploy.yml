@@ -14,14 +14,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4.0.2
+      - uses: actions/setup-node@v5.0.0
         with:
           node-version: 20
-      - uses: oven-sh/setup-bun@v1.2.2
-      - uses: actions/cache@v4.0.2
+      - uses: oven-sh/setup-bun@v2.0.2
+      - uses: actions/cache@v4.3.0
         with:
           path: ~/.bun/install/cache
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: bun run docs:build
       - uses: actions/configure-pages@v5.0.0
-      - uses: actions/upload-pages-artifact@v3.0.1
+      - uses: actions/upload-pages-artifact@v4.0.0
         with:
           path: .vitepress/dist
       - name: Deploy
